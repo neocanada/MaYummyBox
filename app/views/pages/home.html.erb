@@ -1,2 +1,92 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner">
+  <div class="banner-content">
+    <!-- <h1>Découvrez les plaisirs du fait-maison</h1> -->
+    <h1>Partagez un moment en cuisine</h1>
+    <p>Recevez chaque mois une expérience cuilinaire à partager en famille</p>
+    <%= link_to yummyboxes_path do %>
+      <button class="btn btn-primary btn-lg">Je m'abonne <i class="fa fa-chevron-right"></i></button>
+    <% end %>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+      <%#= image_tag('tagline.png', :class => 'tagline-home img-responsive') %>
+      <div class="tagline-home-text text-center">
+        <h1>La box qui va vous faire fondre</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid how-it-works-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h2 class="h2-home-font">COMMENT CA MARCHE</h2>
+      </div>
+      <div class="row how-it-works">
+        <div class="col-sm-4 text-center">
+          <div class="how-it-woks-wrapper-element">
+            <p class="text-center">1</p>
+            <%= image_tag "step-1.jpg", class: "img-responsive center-block" %>
+            <h4>Je m'abonne à la plus gourmande des box.</h4>
+          </div>
+        </div>
+        <div class="col-sm-4 text-center">
+          <div class="how-it-woks-wrapper-element">
+            <p class="text-center">2</p>
+            <%= image_tag "step-2.jpg", class: "img-responsive center-block" %>
+            <h4>Je reçois tous les mois ma YummyBox pour faire une nouvelle recette de patisserie maison</h4>
+          </div>
+        </div>
+        <div class="col-sm-4 text-center">
+          <div class="how-it-woks-wrapper-element">
+            <p class="text-center">3</p>
+            <%= image_tag "step-3.jpg", class: "img-responsive center-block" %>
+            <h4>Je partage avec mes enfants ou amis un moment innoubliable en cuisine</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-1 col-sm-push-5 text-center">
+        <div class="buffer-block-lg"></div>
+        <h2>Des produits de qualités</h2>
+        <h4 class"buffer">Ma Yummybox c'est des produits sélectionnées avec soins pour vous offrir une qualité gustative incomparable.</h4>
+        <a class="btn btn-primary btn-lg">Je m'abonne <i class="fa fa-chevron-right"></i></a>
+        <div class="buffer-block-lg"></div>
+      </div>
+      <div class="col-sm-4 col-sm-pull-6 text-center">
+        <div class="buffer-block-lg"></div>
+        <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=Image%20%C3%A0%20changer&w=800&h=589" class="img-responsive img-rounded">
+        <div class="buffer-block-lg"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid texture-card">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-1 col-sm-push-6 text-center">
+        <div class="buffer-block-lg"></div>
+        <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=Image%20%C3%A0%20changer&w=800&h=589" class="img-responsive img-rounded">
+        <div class="buffer-block-lg"></div>
+      </div>
+      <div class="col-sm-6 col-sm-pull-5 text-center">
+        <div class="buffer-block-lg"></div>
+        <h2>Partager </h2>
+        <h4 class"buffer">Vos cookies fait maison. </h4>
+        <a class="btn btn-primary btn-lg">Je m'abonne <i class="fa fa-chevron-right"></i></a>
+        <div class="buffer-block-lg"></div>
+      </div>
+    </div>
+  </div>
+</div>

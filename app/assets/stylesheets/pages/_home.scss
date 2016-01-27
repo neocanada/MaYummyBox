@@ -2,3 +2,118 @@
  * SASS code SPECIFIC TO your home page
  * (margin/padding adjustments, background image, etc..)
  * ------------------------------------- */
+
+
+ .banner {
+  color: white;
+  text-align: center;
+  // height: 100vh;
+  height: 500px;
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background-image: image-url("bg.jpg");
+  background: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 50%), image-url("bg.jpg");
+}
+.banner h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+.banner p {
+  font-size: 21px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.9);
+}
+.banner .btn {
+  margin-top: 20px;
+}
+
+.tagline-home-text h1 {
+  font-family: 'Chewy';
+  font-size: 50px;
+  color: $brown;
+}
+
+.tagline-home {
+  margin: 0 auto;
+}
+
+.tagline-home-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+// .img-responsive {
+//   display: block;
+//   max-width: 100%;
+//   height: auto;
+// }
+
+
+
+
+h2.h2-home-font {
+  font-family: 'Lato';
+  color: $green;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.how-it-works img {
+  max-width: 75%;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buffer {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.buffer-block-lg {
+  height: 75px;
+}
+
+.how-it-works-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.texture-card {
+  background-color: #f1f1f1;
+}
+
+.img-rounded {
+    border-radius: 5px;
+}
+
+.how-it-woks-wrapper-element {
+  p {
+    width: 2em;
+    height: 2em;
+    color: white;
+    background-color: #1fbeca;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2em;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  img {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+  }
+  h4 {
+    line-height: 30px;
+    padding-top: 10px;
+  }
+}

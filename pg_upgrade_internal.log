@@ -1,0 +1,29 @@
+
+-----------------------------------------------------------------
+  pg_upgrade run on Tue Jan 26 15:06:54 2016
+-----------------------------------------------------------------
+
+You must identify the directory where the old cluster binaries reside.
+Please use the -b command-line option or the PGBINOLD environment variable.
+Running in verbose mode
+
+-----------------------------------------------------------------
+  pg_upgrade run on Tue Jan 26 15:08:35 2016
+-----------------------------------------------------------------
+
+check for "/usr/local/Cellar/postgresql/9.5_2/bin" failed: No such file or directory
+
+Running in verbose mode
+
+-----------------------------------------------------------------
+  pg_upgrade run on Tue Jan 26 15:08:56 2016
+-----------------------------------------------------------------
+
+"/usr/local/Cellar/postgresql/9.5.0/bin/pg_ctl" -w -l "pg_upgrade_server.log" -D "/usr/local/var/postgres" -o "-p 50432 -c autovacuum=off -c autovacuum_freeze_max_age=2000000000  -c listen_addresses='' -c unix_socket_permissions=0700" start >> "pg_upgrade_server.log" 2>&1
+
+*failure*
+There were problems executing ""/usr/local/Cellar/postgresql/9.5.0/bin/pg_ctl" -w -l "pg_upgrade_server.log" -D "/usr/local/var/postgres" -o "-p 50432 -c autovacuum=off -c autovacuum_freeze_max_age=2000000000  -c listen_addresses='' -c unix_socket_permissions=0700" start >> "pg_upgrade_server.log" 2>&1"
+Consult the last few lines of "pg_upgrade_server.log" for
+the probable cause of the failure.
+There seems to be a postmaster servicing the old cluster.
+Please shutdown that postmaster and try again.

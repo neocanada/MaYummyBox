@@ -10,7 +10,7 @@
     width: 100%;
   }
   &-logo {
-    width: 50px;
+    width: 160px;
   }
   &-container {
     display: flex;
@@ -70,14 +70,14 @@
     padding: 0 20px;
     border-radius: 20em;
     line-height: 40px;
-    background-color: #D23333;
+    background-color: $brand-color;
     color: white;
     font-size: 14px;
     border: 2px solid $brand-color;
 
     &:hover {
       color: white;
-      background: $brand-color;
+      background: darken($brand-color, 10%);
       border-color: darken($brand-color, 10%);
     }
   }

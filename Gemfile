@@ -8,12 +8,18 @@ gem 'jbuilder', '~> 2.0'
 gem 'devise'
 
 gem 'sass-rails', '~> 5.0'
+gem 'coffee-script'
 gem 'jquery-rails'
 gem 'uglifier'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
+gem 'paperclip'
+gem 'aws-sdk', '< 2.0'
+
+gem 'money-rails'
+gem 'rails_admin'
 
 group :development, :test do
   gem 'binding_of_caller'
