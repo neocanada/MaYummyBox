@@ -1,17 +1,68 @@
-<h2>Sign up</h2>
+<div class="container">
+  <div class="row">
+    <div class="container-registration-top-section">
+      <div class="registration-top-section text-center">
+        <div class="registration-title text-center">
+          <h2>Pour accéder à ma commande, me connecter ou créer un compte</h2>
+        </div>
 
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= f.error_notification %>
+        <div class="registration-login-button text-center">
+          <%= render "devise/shared/links" %>
+        </div>
 
-  <div class="form-inputs">
-    <%= f.input :email, required: true, autofocus: true %>
-    <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
-    <%= f.input :password_confirmation, required: true %>
+        <div class="registration-separation text-center">
+          <p class="text-center"><span>OU</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="container-registration-form">
+        <div class="form-registration-box">
+          <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+            <%= f.error_notification %>
+
+            <div class="form-inputs form-sign">
+              <div class="col-md-6 col-xs-12">
+                <%= f.input :firstname, required: true, autofocus: true, label: 'Prénom' %>
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <%= f.input :lastname, required: true, label: 'Nom' %>
+              </div>
+              <div class="col-md-12 col-xs-12">
+                <%= f.input :address1, required: true, label: 'Adresse' %>
+              </div>
+              <div class="col-md-12 col-xs-12">
+                <%= f.input :address2, label: 'Complément d\'adresse', placeholder: 'appartement, code d\'entrée, etc...' %>
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <%= f.input :zip, required: true, label: 'Code postal' %>
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <%= f.input :city, required: true, label: 'Ville' %>
+              </div>
+              <div class="col-md-12 col-xs-12">
+                <%= f.input :phone, required: true, label: 'Mobile (pour la livraison)' %>
+              </div>
+              <div class="col-md-12 col-xs-12">
+                <%= f.input :email, required: true, label: 'Email', placeholder: 'utilisateur@domain.com' %>
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <%= f.input :password, required: true, label: 'Créer un mot de passe', placeholder: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>        </div>
+              <div class="col-md-6 col-xs-12">
+                <%= f.input :password_confirmation, required: true, label: 'Confirmer votre mot de passe' %>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <div class="col-md-12 text-center">
+                <%= f.button :submit, "Valider", class: "btn btn-primary" %>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
   </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>
