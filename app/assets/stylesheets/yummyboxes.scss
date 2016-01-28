@@ -2,6 +2,34 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.intro-subscription-title {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  h2 {
+    position: relative;
+    text-align: center;
+    color: #1fbeca;
+    span {
+      background: #fff;
+      padding: 0 15px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  h2:before {
+    background: #1fbeca;
+    content: "";
+    display: block;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0;
+    opacity: 0.5;
+  }
+}
+
+
 .subscription-element {
   margin-top: 40px;
   margin-bottom: 40px;
