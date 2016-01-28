@@ -2,9 +2,50 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-.price-image {
-  img {
-    border-radius: 50%;
+.subscription-element {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 220px;
+  height: 448px;
+  background-color: #fff;
+  .price-box {
+    .price-image-card {
+      img {
+        border-radius: 50%;
+        width: 200px;
+      }
+    }
+    .price-condition {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .price {
+        color: #1fbeca;
+        font-size: 32px;
+        font-weight: 600;
+        display: block;
+        border-top: 1px solid #1fbeca;
+        border-bottom: 1px solid #1fbeca;
+        line-height: normal;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 6px 0;
+      }
+    }
+    .product_desc {
+      p {
+        color: $gray-light;
+        line-height: 7px;
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+    .order-button {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      button {
+        width: 200px;
+      }
+    }
   }
 }

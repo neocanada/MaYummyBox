@@ -17,6 +17,7 @@ gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'paperclip'
 gem 'aws-sdk', '< 2.0'
+gem 'seed_dump'
 
 gem 'money-rails'
 gem 'rails_admin'
